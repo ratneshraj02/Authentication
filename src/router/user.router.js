@@ -13,7 +13,7 @@ import { verifyJWT } from '../middleware/auth.middleware.js';
 const router = Router();
 
 //health check
-router.route('health-check').get((req, res) => {
+router.route('/health-check').get((req, res) => {
     res.status(200).json({ message: "Health Checked" });
 })
 router.route('/register').post(registerUser);
